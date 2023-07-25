@@ -1,0 +1,96 @@
+.container {
+  position: relative;
+
+  .invisible {
+    display: none;
+  }
+
+  .error__message {
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.7em;
+    line-height: 15px;
+    color: #cc1f1f;
+    margin-top: -8%;
+  }
+
+  .label {
+    margin: 0;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 0.55em;
+    line-height: 15px;
+    color: #adadad;
+  }
+
+  .input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 5vh;
+    max-height: 200px;
+    background-color: #f0f0f0;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 3%;
+    margin-bottom: 8%;
+
+    &::placeholder {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.9em;
+      line-height: 22px;
+      color: #000000;
+    }
+
+    &:focus {
+      border: 2px solid #fdcb6e;
+    }
+  }
+
+  .error {
+    border: 2px solid #cc1f1f;
+  }
+
+  .image {
+    width: 4vh;
+    position: absolute;
+    top: 2.6vh;
+    right: 0.5vh;
+  }
+}
+
+@media all and (max-width: 800px), all and (max-height: 500px) {
+  .container {
+    .input {
+      height: 7vh;
+      font-size: 1em;
+
+      &::placeholder {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.9em;
+        line-height: 22px;
+        color: #000000;
+      }
+    }
+
+    .label {
+      letter-spacing: 2.5px;
+      font-size: 0.75em;
+      line-height: 15px;
+      margin-bottom: 5px;
+    }
+
+    .image {
+      width: 4vh;
+      //position: absolute;
+      top: 3.8vh;
+      right: 0.5vh;
+    }
+  }
+}

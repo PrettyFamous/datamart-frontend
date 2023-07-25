@@ -1,0 +1,52 @@
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 5vw;
+  background: linear-gradient(180deg, #d5eee2 0%, #7db59a 43.23%);
+  z-index: 11;
+
+  &__img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2vh;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .button {
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 2vh;
+
+      &.active {
+        border-left: 5px solid #fff;
+        padding-right: 5px;
+        img {
+          width: calc(40% + 4px);
+        }
+      }
+
+      img {
+        width: 40%;
+        margin: 0 auto;
+        display: flex;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 800px), all and (max-height: 500px) {
+  .navigation {
+    display: none;
+  }
+}

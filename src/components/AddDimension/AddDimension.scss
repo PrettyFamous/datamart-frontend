@@ -1,0 +1,137 @@
+.main__container {
+  position: relative;
+  margin-left: 8vw;
+  margin-top: 12vh;
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .input-file {
+    position: relative;
+    display: inline-block;
+  }
+  .input-file-btn {
+    font-family: "Inter";
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #7db59a;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 0;
+    transition: background-color 0.2s;
+  }
+
+  .btn--back {
+    font-family: "Inter";
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 0;
+    margin-right: 1%;
+    transition: background-color 0.2s;
+    background-color: inherit;
+    color: #858585;
+    border: 1px solid #adadad;
+
+    &:hover {
+      color: #7db59a;
+      border-color: #7db59a;
+    }
+
+    &:active {
+      color: #4f896c;
+      border-color: #4f896c;
+    }
+  }
+
+  .approve-btn {
+    margin-left: 5%;
+  }
+  .confirm-btn {
+    position: absolute;
+    top: 0;
+    margin-top: 8.5%;
+    margin-left: 20%;
+  }
+  .input-file-text {
+    padding: 0 10px;
+    line-height: 40px;
+    display: inline-block;
+  }
+  .input-file input[type="file"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  /* Hover/active */
+  .input-file:hover .input-file-btn {
+    background-color: #5b9479;
+  }
+  .input-file:active .input-file-btn {
+    background-color: #4f896c;
+  }
+
+  .preview__table {
+    border-collapse: collapse;
+    th {
+      padding: 5px 10px;
+      border: 1px solid grey;
+    }
+    td {
+      padding: 3px 5px;
+      border: 1px solid grey;
+    }
+
+    &-name {
+      display: block;
+      border: 0;
+      font-weight: 700;
+      font-size: 1.2em;
+      margin-top: 1%;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+  }
+
+  .add-file-row {
+    margin-top: 1%;
+  }
+}

@@ -1,0 +1,99 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 200px;
+  width: 15%;
+  max-width: 260px;
+  min-height: 70px;
+  border: 1px solid #bbb;
+  border-radius: 15px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding: 0.8%;
+  padding-top: 0.4%;
+
+  h3 {
+    margin: 0;
+  }
+
+  &__field {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  &__remove-icon {
+    position: absolute;
+    right: 8%;
+    top: 10%;
+    width: 6%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__button--edit {
+    text-decoration: none;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    min-width: 80px;
+    width: 100%;
+    margin-right: 6%;
+
+    border-radius: 10px;
+    border: 0;
+    background: #7db59a;
+    color: #fff;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-size: 0.8rem;
+
+    &:hover {
+      cursor: pointer;
+      background: #5b9479;
+    }
+
+    &:active {
+      background: #4f896c;
+    }
+  }
+
+  &__button--remove {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    border-radius: 10px;
+
+    color: #858585;
+    border: 1px solid #adadad;
+
+    background: #fff;
+    text-align: center;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    font-size: 0.75rem;
+
+    &:hover {
+      color: #7db59a;
+      border-color: #7db59a;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: #4f896c;
+      border-color: #4f896c;
+      cursor: pointer;
+    }
+  }
+}
